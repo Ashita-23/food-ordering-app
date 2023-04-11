@@ -1,0 +1,15 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Acme&family=Nunito:wght@300;500;600&display=swap');
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Acme', sans-serif; */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* <i class="fa-solid fa-percent"></i>
+  <i class="fa-solid fa-circle-question"></i>
+  <i class="fa-solid fa-user-plus"></i>log in<i class="fa-solid fa-user-minus"></i>
+  <i class="fa-solid fa-cart-shopping"></i>
+  <i class="fa-solid fa-tags"></i> */
