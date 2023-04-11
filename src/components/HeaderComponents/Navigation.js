@@ -1,9 +1,11 @@
 import React from "react"
+import './navigation.css'
+import './navMediaQ.css'
 
 const Navigation = ()=>{
     return(<>
   <nav className="nav-box">
-    <div className="logo-box"><span>Foodies</span></div>
+    <div className="logo-box"><span className="logo-text">Foodies</span></div>
     <div  className="nav-link-box">
         <ul className="nav-links">
             <li><a href="#home">home</a></li>
@@ -14,6 +16,7 @@ const Navigation = ()=>{
         </ul>
     </div>
   </nav>
+
     </>)
 }
 

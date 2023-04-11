@@ -1,0 +1,86 @@
+
+.card-outer-box{
+    height: 28rem;
+    width: 22rem;
+    margin: 1rem 0rem;
+border: 1px solid transparent;
+transition: 0.8s;
+}
+
+
+.card-outer-box:hover{
+ 
+border: 1px solid rgb(155, 153, 153);
+}
+
+.image-box{
+/* border: 1px solid red; */
+
+}
+
+.image{
+/* border: 1px solid red; */
+height: 10rem;
+
+}
+.shop-name{
+    /* border: 1px solid red; */
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgb(110, 109, 109);
+}
+    
+    .cuisines-box{
+       
+        text-transform: capitalize;
+        font-size: 0.9rem;
+        font-weight:500;
+        color: rgb(119, 119, 119);
+    }
+
+
+.RTP-box{
+/* border: 1px solid red; */
+
+}
+
+.rupee-icon{
+    
+}
+.mrp-text{
+/* border: 1px solid red; */
+
+}
+.btn-box{
+/* border: 1px solid red; */
+
+}
+
+.offer-text{
+/* border: 1px solid red; */
+
+}
+.view-btn{
+/* border: 1px solid red; */
+
+}
+
+ /* @media Query */
+
+ @media (min-width: 360px) {
+}
+/* ______________________ */
+ @media (min-width: 640px) {
+}
+/* ______________________ */
+@media (min-width: 768px) {
+}
+/* ______________________ */
+@media (min-width: 1024px) {
+}
+/* ______________________ */
+@media (min-width: 1280px) {
+}
+/* ______________________ */
+@media (min-width: 1536px) {
+}
