@@ -3,29 +3,31 @@ import "./cards.css";
 import "./cards@mediaQ.css";
 
 const Cards = (props) => {
-  // console.log(props)
+  
+const restdata = props?.allResturentData?.data?.data;
   return (
 
     <>
-      <div className="card-outer-box" key={props?.allResturentData?.data?.data.restaurantId}>
+      <div className="card-outer-box" key={ restdata?.restaurantId}>
         <figure className="image-box">
-          <img className="image" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+props?.allResturentData?.data?.data.cloudinaryImageId
+          <img className="image" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+ restdata?.cloudinaryImageId
 } alt="cards" />
         </figure>
-        <figcaption className="shop-name">{props?.allResturentData?.data?.data.name}</figcaption>
-        <p className="cuisines-box">{props?.allResturentData?.data?.data.cuisines.join(",")}</p>
+        <div className="data-containor">
+        <figcaption className="shop-name">{restdata?.name}</figcaption>
+        <p className="cuisines-box">{restdata?.cuisines.join(",").trim()}</p>
         <p className="food-text">
          
         </p>
         <div className="RTP-box">
-            <span className="mrp-text">{props?.allResturentData?.data?.data.totalRatings
-}|</span>
-            <span className="mrp-text">{props?.allResturentData?.data?.data.maxDeliveryTime}MINS|</span>
-            <span className="mrp-text"> Rs.{props?.allResturentData?.data?.data.costForTwo/100} FOR TWO</span>
+            <span className="ratingHigh-text"><i className="fa-solid fa-star"></i> {restdata?.avgRating}</span><span>|</span>
+            <span className="mrp-text">{restdata?.maxDeliveryTime} MINS </span><span>|</span>
+            <span className="mrp-text"> Rs.{restdata?.costForTwo/100} FOR TWO</span>
         </div>
         <div className="btn-box">
-            <p className="offer-text"> 10 % off</p>
+            <p className="offer-text">{restdata?.aggregatedDiscountInfo?.shortDescriptionList[0].meta || 'Offer Not found'}</p>
             <button className="view-btn">Quick view</button>
+        </div>
         </div>
       </div>
     </>

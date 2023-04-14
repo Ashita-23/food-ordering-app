@@ -1,69 +1,140 @@
 
+*{
+    margin: 0px;
+    /* padding: 0px; */
+}
 .card-outer-box{
-    height: 28rem;
+    /* border: 1px solid red; */
+    height: 26rem;
     width: 22rem;
     margin: 1rem 0rem;
-border: 1px solid transparent;
-transition: 0.8s;
+/* border: 1px solid transparent; */
+/* transition: 1s; */
 }
 
 
 .card-outer-box:hover{
- 
-border: 1px solid rgb(155, 153, 153);
+    /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+/* border: 1px solid rgb(155, 153, 153); */
+
 }
 
 .image-box{
 /* border: 1px solid red; */
+padding: 1rem;
 
 }
 
 .image{
 /* border: 1px solid red; */
-height: 10rem;
+height: 12rem;
+width: 20rem;
 
+}
+
+.data-containor{
+    /* border: 1px solid rgb(236, 14, 14); */
+    height: auto;
+    width: auto;
+
+    padding: 0rem 1rem;
 }
 .shop-name{
     /* border: 1px solid red; */
     font-size: 1.1rem;
-    font-weight: bold;
-    color: rgb(110, 109, 109);
+    font-weight: 600;
+    color: rgb(34, 34, 34);
 }
     
     .cuisines-box{
-       
+        /* border: 1px solid rgb(75, 35, 35); */
+        text-align: justify;
         text-transform: capitalize;
-        font-size: 0.9rem;
+        font-size:13px;
         font-weight:500;
-        color: rgb(119, 119, 119);
+        letter-spacing: 0.1px;
+        /* word-spacing: -3px; */
+        margin: 0.2rem  0rem ;
+        color: rgb(77, 76, 76);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
 
 .RTP-box{
+    border-bottom: 1px solid rgb(173, 173, 173) ;
 /* border: 1px solid red; */
+margin: 0.2rem  0rem ;
+padding: 0.5rem 0rem;
 
 }
 
-.rupee-icon{
-    
+.ratingLow-text{
+    font-size: 0.8rem;
+    word-spacing: 5px;
+/* border: 1px solid red; */
+margin: 0rem 0.2rem;
+padding: 0.2rem 0.4rem;
+color: white;
+background-color: rgb(18, 190, 18);
+}
+
+.ratingHigh-text{
+    font-size: 0.8rem;
+    word-spacing: 5px;
+/* border: 1px solid red; */
+margin: 0rem 0.2rem;
+padding: 0.2rem 0.4rem;
+color: white;
+background-color: rgb(18, 190, 18);
 }
 .mrp-text{
+    font-size: 0.8rem;
+     word-spacing: 5px;
 /* border: 1px solid red; */
+margin: 0rem 0.2rem;
+padding: 0rem 0.4rem;
 
 }
 .btn-box{
 /* border: 1px solid red; */
+margin: 0rem 0.2rem;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+/* align-items: center; */
 
 }
 
 .offer-text{
 /* border: 1px solid red; */
+color: rgb(165, 42, 42);
+font-size: 0.9rem;
+font-weight: 500;
+padding: 0.5rem 1rem;
+text-align: center;
+border-bottom: 1px solid lightgray;
 
 }
 .view-btn{
-/* border: 1px solid red; */
-
+     visibility: hidden;
+    margin: 0.5rem  0rem ;
+    padding: 0.5rem 2rem ;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: none;
+    font-weight:600  ;
+    letter-spacing: 0.5px;
+    color: rgb(45, 140, 218);
 }
+.view-btn:hover{
+    visibility: inherit;
+}
+
+
 
  /* @media Query */
 
