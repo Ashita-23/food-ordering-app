@@ -3,12 +3,11 @@ import "./cards.css";
 import "./cards@mediaQ.css";
 
 const Cards = (props) => {
-  
+  // console.log(props.allResturentData)
+  // return (<></>);
 const restdata = props?.allResturentData?.data?.data;
   return (
-
-    <>
-      <div className="card-outer-box" key={ restdata?.restaurantId}>
+      <div className="card-outer-box" key={ restdata?.sla?.restaurantId || ''}>
         <figure className="image-box">
           <img className="image" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/"+ restdata?.cloudinaryImageId
 } alt="cards" />
@@ -20,6 +19,7 @@ const restdata = props?.allResturentData?.data?.data;
          
         </p>
         <div className="RTP-box">
+        {/* {(!restdata?.avgRating > 4 )? ():()} */}
             <span className="ratingHigh-text"><i className="fa-solid fa-star"></i> {restdata?.avgRating}</span><span>|</span>
             <span className="mrp-text">{restdata?.maxDeliveryTime} MINS </span><span>|</span>
             <span className="mrp-text"> Rs.{restdata?.costForTwo/100} FOR TWO</span>
@@ -30,7 +30,7 @@ const restdata = props?.allResturentData?.data?.data;
         </div>
         </div>
       </div>
-    </>
+  
   );
 };
 
